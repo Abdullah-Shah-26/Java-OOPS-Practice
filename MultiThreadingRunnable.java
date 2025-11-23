@@ -7,13 +7,12 @@ class A implements Runnable{
     }
   }
 }
-
 public class MultiThreadingRunnable {
   public static void main(String[] args) {
     A r = new A();
     Thread t = new Thread(r);
-    t.start(); // Thread class will call run method 
-
+    t.start();
+     // Thread class will call run method 
     for(int i = 1; i <= 5; i++)
     {
       System.out.println("Main Thread");
